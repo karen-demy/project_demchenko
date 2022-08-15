@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.conteiner {
+    max-width: 1380px;
+    min-width: 315px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.body {
+    font-family: 'Montserrat', 'Arial' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    min-width: 315px;
+   
+}
+
+
+@media  screen and (min-width:768px) {
+    
+.conteiner {
+    padding: 0 30px;
+}
+}

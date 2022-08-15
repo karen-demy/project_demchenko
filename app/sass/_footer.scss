@@ -1,0 +1,201 @@
+.footer {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+margin-top: 30px;
+padding: 31px 0;
+border-top: 2px solid $grey-sep;
+
+
+    &__map {
+        line-height: 20px;
+        color: $dark;
+    }
+
+    &__onmap {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $blue-light;
+        margin-top: 10px;
+        margin-bottom: 21px;
+    }
+   
+    &__tel {
+        font-weight: 700;
+        line-height: 20px;
+        color: $dark-alt;
+        margin: 6px 0 8px 0;
+    }
+
+    &__face path:hover{
+        fill:$pink;
+    }
+
+    &__mail {
+        font-weight: 700;
+        line-height: 20px;
+        color: $blue-light;
+        margin-bottom: 30px;
+
+        &:hover {
+            color: $pink;
+        }
+    }
+
+    &__copy {
+        line-height: 20px;
+        color: $grey-soft;
+    }
+
+}
+
+@media screen and(min-width:768px){
+    .footer {
+        display: grid;
+        grid-template-columns: min-content min-content min-content;
+        grid-template-rows: min-content min-content min-content;
+        padding: 13px 0;
+      
+        
+        
+            &__map {
+                grid-column-start:2 ;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                margin-left: -1px;
+            }
+        
+            &__onmap {
+                grid-column-start:2;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                padding-top: 9px;
+                margin-left:225px;
+            }
+            &__face {
+                grid-column-start:2 ;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                margin-top: -17px;
+                margin-left: -1px;
+            }
+        
+            &__tel {
+                grid-column-start:2;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                margin-left: 53px;
+                margin-top: -12px;
+                margin-left: 64px;
+            }
+        
+            &__mail {
+                grid-column-start:2 ;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                padding-top: 12px;
+                margin-left:193px;
+            }
+        
+            &__copy {
+                grid-column-start:1 ;
+                grid-column-end: 4;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                text-align: center;
+                margin-top: 8px;
+            }
+        
+        }
+    
+}
+
+@media screen and(min-width:1024px) {
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 30px 60px;
+        
+      
+        
+        
+            &__map {
+                grid-column-start:1 ;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                margin-top: -11px;
+                margin-left: -1px;
+                
+            }
+        
+            &__onmap {
+                grid-column-start:1;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                margin-left: 211px;
+                margin-top: -1px;
+                margin-left: 206px;
+           
+            }
+            &__face {
+                grid-column-start:1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                margin-top: 1px;
+            }
+        
+            &__tel {
+                grid-column-start:1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                margin-left: 48px;
+                margin-top: 8px;
+               
+            }
+        
+            &__mail {
+                grid-column-start:1;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                margin-left: 177px;
+                margin-top: 1px;
+             
+            }
+        
+            &__copy {
+                grid-column-start:3;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                margin-top:-11px;
+                margin-right: 1px;
+                
+            }
+
+            &__point::before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                background: $grey-soft;
+                border-radius: 50%;
+                display: inline-block;
+                margin-bottom: 2px;
+                margin-right: 10px ;
+    
+            }
+        
+        }
+}

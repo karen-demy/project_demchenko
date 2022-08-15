@@ -1,0 +1,66 @@
+.box {
+    padding-top: 131px;
+    padding-bottom: 54px;
+    padding-right: 8px;
+
+    &__text {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: $white;
+        margin-bottom: 154px;
+    }
+    &__btn {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        background-color: transparent;
+        height: 42px;
+        width: 42px;
+        margin: 0 auto;
+        display: block;
+       
+       
+
+    
+    &-svg {
+        margin-top: 8px;
+
+    }    
+
+    }
+
+}
+
+
+@media  screen and (min-width:768px) {
+    .box {
+        padding-top: 272px;
+        padding-bottom: 92px;
+        padding-right: 0;
+
+        &__text {
+            margin-bottom: 416px;
+            
+        }
+
+
+
+}
+
+}
+
+@media  screen and (min-width:1024px) {
+    .box {
+        padding-top: 234px;
+
+        &__text {
+            margin-bottom: 303px; 
+            
+        }
+
+
+
+}
+
+}

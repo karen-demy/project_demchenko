@@ -1,0 +1,175 @@
+.background-about-footer {
+    background: $grey-light;
+    
+}
+
+.slider {
+  
+    
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $dark;
+        padding: 30px 0;
+    }
+
+    &__card {
+        background-color: $white;
+        border-radius: 12px;
+        text-align: center;
+        height: 90px;
+        width: 81%;
+        margin-left: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        width: 20%;
+    }
+}
+
+.slider__card_desktop {
+    display: none;
+}
+
+@media  screen and (min-width:768px) {
+
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+
+   &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   &__card:not(:first-child) {
+    margin-left: 40px;
+   }
+
+   &__img {
+    
+
+    &_one {
+        width: 38%;
+    }
+
+    &_two {
+        width: 75%;
+    }
+
+    &_three {
+        width: 92%;
+    }
+
+    &_four {
+        width: 81%;
+    }
+
+
+   }
+
+
+}
+
+    
+}
+
+
+@media  screen and (min-width:1024px) {
+
+
+    .background-about-footer {
+        margin-top: 121px;
+    }
+
+    .slider {
+       width: 100%;
+      
+        &__title {
+            padding: 28px 0px 29px 95px;
+        }
+    
+       &__card {
+        height: 110px;
+        margin-left: 89px;
+       }
+       &__img {
+        
+    
+        &_one {
+           width: 40%;
+        }
+    
+        &_two {
+            width: 82%;
+        }
+    
+        &_three {
+            width: 100%;
+        }
+    
+        &_four {
+            width: 86%;
+        }
+    
+    
+       }
+    
+    
+    }
+    
+        
+    }
+
+    @media  screen and (min-width:1214px) {
+
+        .background-about-footer {
+            margin-top: 0px;
+        }
+        .slider {
+            &__titile {
+                padding: 29px 0px 29px 5px;
+            }
+
+            &__card {
+                margin-left: 4px;
+            }
+            
+       &__img {
+        
+    
+        &_one {
+           width: 27%;
+        }
+    
+        &_two {
+            width: 53%;
+        }
+    
+        &_three {
+            width: 65%;
+        }
+    
+        &_four {
+            width: 54%;
+        }
+
+        }
+
+    }
+
+}
+        
+
+    

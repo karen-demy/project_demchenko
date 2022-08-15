@@ -1,0 +1,178 @@
+.team {
+    background: $grey-light;
+    border-radius:12px  12px  12px 12px;
+    margin-top: 30px;
+
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+     
+    }
+
+    &__foto {
+        text-align: center;
+        height: 500px;
+        width: 100%;
+
+        &-img {
+            border-radius:12px  12px 0 0 ;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+
+        }
+    }
+
+    &__text {
+        padding: 31px 32px 32px 32px;
+
+      
+
+
+        &-link {
+            margin-left: 24px;
+            background-position: 86px center;
+
+        }
+
+        &-phrase {
+            margin-left: 24px;
+            margin-top: 4px;
+            font-size: 30px;
+            width: 85%;
+            word-wrap: break-word;
+        }
+
+        &-person {
+            font-weight: 700;
+            line-height: 20px;
+            color: $grey-soft;
+            margin-top: 31px;
+            margin-left: 24px;
+            width: 50%;
+
+        }
+
+        &-position {
+        font-size: 14px;
+        line-height: 22px;
+        color: $grey-soft;
+        margin-top: 6px;
+        margin-left: 23px;
+        }
+
+    }
+
+}
+
+.group {
+    text-align: center;
+    margin-top: 28px;
+
+    &-btn {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $blue-light;
+    opacity: 0.2;
+    border: none;
+    margin: 0 5px 0;
+
+    &_active {
+    opacity: 1;
+    }
+
+    }
+
+}
+
+@media screen and (min-width:768px) {
+.team {
+    margin-top: 60px;
+
+    &__card {
+        height: 344px;
+    }
+
+    &__foto {
+        width: 99%;
+        height: 344px;
+        
+
+
+        &-img {
+            border-radius:  0;
+            
+        }
+    }
+
+    &__text {
+
+        padding: 30px;
+
+        &-link {
+            margin-left: 28px;
+        }
+        
+        &-phrase {
+            margin-left: 28px;
+            margin-top: 3px;
+            font-size: 38px;
+            width: 91%;
+            line-height: 47px;
+
+        }    
+
+            &-person {
+                margin-top: 29px;
+                margin-left: 27px;
+            }
+
+            &-position {
+                margin-top: 4px;
+                margin-left: 29px;
+            }
+        
+    }
+}
+
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .team {
+        &__foto {
+            
+            
+    
+    
+            &-img {
+                    border-radius: 12px 0px 0 12px;
+                
+            }
+        }
+
+        &__text {
+                padding: 32px 60px 30px 0px;
+
+                &-phrase {
+                    width: 96%;
+                }
+        }
+
+
+    &__card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+     
+    }
+
+
+}
+}

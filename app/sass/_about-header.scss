@@ -1,0 +1,209 @@
+
+.background-aboutmobile {
+    background-color: rgba(245, 245, 250, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -30px;
+    padding: 10px 15px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.header_white {
+
+    &__father {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+    }
+   &__logo{
+        &-img {
+            width: 44%;
+        }
+
+    }      
+    
+
+
+    &__name-page {
+    height: 50px;    
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $dark;
+    margin-right: 20px;
+    white-space: nowrap;
+    padding-left: 43px; 
+    padding-top: 5px;
+    position: absolute; 
+    top:10px;
+    left:27px;
+    
+
+    }
+
+    &__logo::after {
+        content: '';
+        width: 19px;
+        height: 26px ;
+        background: url(../img/slash-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 5px -6px;
+        padding-top: 3px;
+        padding-left: 0px;
+        display: inline-block;
+        
+    }
+
+
+
+    &__btn-burger {
+        margin-top: 20px;
+        margin-right: 2px;
+        &-line {
+            background-color:  $dark;
+        }
+    }
+
+    &__btn {
+
+        &-lang {
+            color: $grey-soft;
+
+            &:hover {
+                background: $grey-light;
+                border-radius: 8px;
+            }
+        }
+
+        &-map {
+            color: $grey-soft;
+        }
+        &-tel {
+            color: $grey-soft;
+            margin-right: 4px;
+        }
+
+        &-face path {
+            fill: $grey-soft;
+            
+        }
+    }
+    
+    &__nav {
+
+        &-link {
+            color: $blue-light;
+            
+            &_active {
+            color: $pink;
+            }
+
+            &:hover {
+               border-bottom: 2px solid  $blue-light;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width:768px){
+    .background-aboutmobile {
+        background-color: transparent;
+        justify-content: flex-start;
+        margin-left: 8px;
+    }
+
+
+    
+    .header_white {
+        padding-top: 47px;
+     
+        &__logo{
+            margin-top: 33px;
+            width: 306px;
+          
+            
+            &-img {
+                width: 43%;
+            }
+        }
+    
+    
+        &__name-page {
+            font-size: 36px;
+            line-height: 44px;
+            top: 25px;
+            left: 147px;
+        
+    
+        }
+    
+        &__logo::after {
+            background: url(../img/slash.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-top: 33px;
+            
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .background-aboutmobile {
+        justify-content: flex-end;
+    }
+
+
+    
+    .header_white {
+        grid-template-rows: 1fr;
+        &__father {
+            grid-column-start:1 ;
+            grid-column-end:2 ;
+            grid-column-start: 1;
+            grid-row-end: 2;
+            margin: 7px 0px 0px 78px;
+        
+            
+        }
+    
+        &__name-page {
+            top: 26px;
+            left: 116px;
+        
+    
+        }
+    
+        &__logo::after {
+          padding-left: 4px;
+            
+        }
+    
+    
+        &__btn {
+            padding-bottom: 37px;   
+        }
+        
+        &__nav {
+            margin-top: -53px;
+            margin-right: -20px;
+          
+        }
+    
+    
+    
+    
+    
+    }
+}
+
